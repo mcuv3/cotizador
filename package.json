@@ -1,0 +1,50 @@
+{
+  "name": "cotizador",
+  "version": "1.0.0",
+  "description": "Cotizador de paneles solares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "server":"nodemon ./server/index.js",
+    "dev": "concurrently -k \"tsc -p ./src -w\" \"nodemon ./server/index.js\" \"npm run client\"",
+    "build": "npx tsc -p ./src"
+  },
+  "author": "mcuve",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express-validator": "^3.0.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/pg": "^7.14.3",
+    "aws-sdk": "^2.739.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "html-pdf": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "material-table": "^1.65.0",
+    "nodemailer": "^6.4.10",
+    "pg": "^8.2.1",
+    "pg-format": "^1.0.4",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/blob-stream": "^0.1.30",
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/html-pdf": "^2.2.0",
+    "@types/nodemailer": "^6.4.0",
+    "@types/pdfkit": "^0.10.6",
+    "@types/pg-format": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6",
+    "typescript": "^3.8.3"
+  }
+}

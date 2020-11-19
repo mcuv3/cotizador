@@ -1,0 +1,53 @@
+{
+  "name": "cotizador-admin-dashboard",
+  "version": "1.9.0",
+  "description": "Cotizador de Paneles Solares + Admin Dashboard",
+  "private": false,
+  "main": "dist/index.js",
+  "dependencies": {
+    "@material-ui/core": "4.10.0",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "axios": "^0.19.2",
+    "chartist": "0.10.1",
+    "downloadjs": "^1.4.7",
+    "perfect-scrollbar": "1.5.0",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-chartist": "0.14.3",
+    "react-dom": "16.13.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.1",
+    "react-swipeable-views": "0.13.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "lint:check": "eslint . --ext=js,jsx;  exit 0",
+    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+    "build-package-css": "cp src/assets/css/material-dashboard-react.css dist/material-dashboard-react.css",
+    "build-package": "npx babel-cli src --out-dir dist && npm run build-package-css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.3",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "prettier": "2.0.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": []
+  },
+  "proxy": "http://localhost:5000/"
+}

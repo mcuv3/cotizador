@@ -2,4 +2,4 @@
 cloudStorageCredentials.json
 server/
 /env
-**/db
+**/db/

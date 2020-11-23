@@ -2,6 +2,6 @@
 cloudStorageCredentials.json
 server/
 /env
-/src/db
+/src/db/aws-s3.ts
 
-/src/db/*.ts
+./src/db/**

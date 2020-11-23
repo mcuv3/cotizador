@@ -3,3 +3,5 @@ cloudStorageCredentials.json
 server/
 /env
 /src/db
+
+/src/db/*.ts
